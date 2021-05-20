@@ -1,0 +1,14 @@
+//Yolanda Del Carmen Jimenez Jacobo
+/*Programa que permita al usuario adivinar un animal, si es correcto lo felicitara sino mostrara mensaje de error*/
+/*Esta variable de tipo String alojara un animal*/
+ var animal;
+/*Variable "readline-sync", permite tener una conversacion entre usuario y programa*/
+const respuesta =
+  require("readline-sync");
+animal = respuesta.question(
+  "Lleva traje a diario, es el mas elegante del aviario");
+    if(animal === "pinguino"){
+      console.log("felicidades, lograste adivinarlo");
+    }else{
+      console.log("intentalo de nuevo :(");
+  }
